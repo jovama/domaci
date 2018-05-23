@@ -1,1 +1,2 @@
 Jos jednom da vidim kako ce se pojaviti ovaj fajl na githubu
+A ovo sad je izmena direktno sa GitHub-a.
