@@ -1,0 +1,62 @@
+
+
+Ime
+//input[@name='ime']
+
+Prezime
+//input[@name='prezime']
+
+Korisnicko ime 
+//*[@type='text' and @name='korisnicko’]
+
+za prethodna tri polja?
+//*[contains(text(),'ime') or contains(text(),'Ime')]
+
+Lozinka 
+//*[@type='password' and @id='password’]
+
+razni načini da odaberemo sva polja koja se odnose na lozinku (lozinka, potvrdi lozinku, druga lozinka) - vezbamo contains i starts-with:
+//*[starts-with(@name,'lozinka’)]
+//*[contains(@name,'lozinka')]  
+//input[contains(@id,'password')] 
+
+Potvrdi lozinku
+//input[@name='lozinkaOpet']
+
+Pol - da probam…
+
+Ž
+//*[@type='radio' and @name='pol' and @id='pol_z’]
+M
+//*[@type='radio' and @name='pol' and @id='pol_m']
+
+
+Od salate volim
+//*[@type='checkbox' and @class='salate' and @value='krastavac']
+//*[@type='checkbox' and @class='salate' and @value='paradajz']
+//*[@type='checkbox' and @class='salate' and @value='luk']
+//*[@type='checkbox' and @class='salate' and @value=‘meso’]
+
+
+Lozinka druga
+//*[@id='passwordOptional']
+
+Grad
+//input[@name='grad']
+
+Zemlja
+//select[@name='zemlja']
+ili možda:
+//*[contains(@name,'zemlja')]
+
+za Srbiju //select[@name='zemlja']/option[@value='rs']
+...
+za Crnu Goru //select[@name='zemlja']/option[@value='me']
+
+
+Registruj se
+//input[@type='submit' and @name='register']
+
+Resetuj
+//input[@type='reset' and @name='reset']
+
