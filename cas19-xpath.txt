@@ -1,0 +1,41 @@
+Registracija na forumu
+
+Korisnicko ime
+//input[@id='regusername']
+
+Sifra
+//input[@id='password']
+
+Potvrdite sifru
+//input[@id='passwordconfirm']
+
+E-mail adresa
+//input[@id=‘email’]
+
+Potvrdite e-mail adresu
+//input[@id='emailconfirm']
+
+Pozicija info bloka
+//select[@id='cfield_19']
+opcija 2: //select[@id='cfield_19']/option[@value='2'] ili 
+//select[@id='cfield_19']/option[contains(text(),'2')]
+
+Vremenska zona
+//select[@name='timezoneoffset']
+
+za GMT+1: //select[@name='timezoneoffset']/option[@value='1']
+ili //select[@name='timezoneoffset']/option[contains(text(),'Brussels')]
+ili //select[@name='timezoneoffset']/option[starts-with(text(),'(GMT +1:00 hour)')]
+
+Korekcije u racunanju vremena
+//select[@name='dst']
+opcija - korekcije iskljucene: //select[@name='dst']/option[@value='0'] ili //select[@name='dst']/option[contains(text(),'isključene')]
+
+
+Zelim da primam e-mailove admina: //input[@id='cb_adminemail']
+Zelim da primem e-mailove ostalih clanova: //input[@id='cb_showemail']
+
+
+Prikazi konfiguraciju
+//select[@id='cfield_6']
+za opciju NE: //select[@id='cfield_6']/option[starts-with(text(),'N')]
