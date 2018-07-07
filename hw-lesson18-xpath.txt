@@ -1,4 +1,4 @@
-
+(: practising XPath on http://qa.todorowww.net/register :)
 
 Ime
 //input[@name='ime']
