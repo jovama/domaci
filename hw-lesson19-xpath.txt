@@ -1,4 +1,5 @@
-Registracija na forumu
+(: practising XPath on https://forum.benchmark.rs/register.php :) 
+(: this is just practice, I didn't actually proceed with registering :)
 
 Korisnicko ime
 //input[@id='regusername']
